@@ -5,6 +5,6 @@ Feature: LOGIN
   para navegar en la pantalla del modulo de creditos
 
   Scenario: LOGIN
-    Given que el abre pagina modulo creditos
-    When el inicia sesion con usuario prueba.test.qa.123@gmail.com con clave Prueba1234
+    Given que el abre pagina principal
+    When el inicia sesion con usuario upruebas2@summa-sci.com con clave David-2820*
     Then se vera pantalla de inicio del gestor senior

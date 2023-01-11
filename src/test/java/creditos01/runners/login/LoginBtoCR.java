@@ -1,4 +1,4 @@
-package creditos01.runners;
+package creditos01.runners.login;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
@@ -7,10 +7,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/login.feature",
-        glue = "creditos01.stepdefinitions.login",
+        features = "src/test/resources/features/login/login_btoc.feature",
+        glue = "creditos01.stepdefinitions.login.login_btoc",
        snippets= SnippetType.CAMELCASE,
         dryRun = false
 )
-public class LoginR {
+public class LoginBtoCR {
 }

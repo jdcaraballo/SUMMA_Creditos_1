@@ -24,7 +24,7 @@ public class SerchDetailCreditById implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(BTN_VER_CREDITOS),
+                Click.on(BTN_VER_CREDITOS_MASIVOS),
                 WaitElement.isClickable(BOX_CONSULTAR_CRED_IDENTIFICACION),
                 Click.on(BOX_CONSULTAR_CRED_IDENTIFICACION),
                 Enter.theValue(id).into(BOX_CONSULTAR_CRED_IDENTIFICACION),

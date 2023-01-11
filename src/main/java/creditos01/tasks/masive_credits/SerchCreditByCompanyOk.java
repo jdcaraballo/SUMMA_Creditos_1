@@ -22,21 +22,16 @@ public class SerchCreditByCompanyOk implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(BTN_VER_CREDITOS),
-                WaitElement.isClickable(BOX_CONSULTAR_CRED_COMPANIA),
+                WaitElement.isClickable(BTN_PRINCIAPAL_VER_CREDITOS),
+                Click.on(BTN_PRINCIAPAL_VER_CREDITOS),
+                Wait.aTime(10000),
+                WaitElement.isClickable(BTN_VER_CREDITOS_MASIVOS),
+                Click.on(BTN_VER_CREDITOS_MASIVOS),
+                WaitElement.isVisible(BOX_CONSULTAR_CRED_COMPANIA),
                 Click.on(BOX_CONSULTAR_CRED_COMPANIA),
+                Wait.aTime(10000),
                 Enter.theValue(company).into(BOX_CONSULTAR_CRED_COMPANIA),
                 Hit.the(ENTER).into(BOX_CONSULTAR_CRED_COMPANIA),
-//                Scroll.to(SCROLL_END_PAGE),
-//                Wait.aTime(1000),
-//                Scroll.to(SCROLL_START_PAGE),
-
-//                Click.on(BOX_CONSULTAR_CRED_IDENTIFICACION),
-//                Enter.theValue("SUMMA").into(BOX_CONSULTAR_CRED_IDENTIFICACION),
-
-//                Click.on(BOX_PASS),
-//                Enter.theValue(key).into(BOX_PASS),
-//                Click.on(BTN_SIGN_IN),
                 Wait.aTime(5000));
     }
     public static SerchCreditByCompanyOk serchCreditsOk(String company) {

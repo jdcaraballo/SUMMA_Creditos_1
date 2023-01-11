@@ -22,7 +22,7 @@ public class SerchCreditByLastName implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(BTN_VER_CREDITOS),
+                Click.on(BTN_VER_CREDITOS_MASIVOS),
                 WaitElement.isClickable(BOX_CONSULTAR_CRED_LASTNAME),
                 Click.on(BOX_CONSULTAR_CRED_LASTNAME),
                 Enter.theValue(lastName).into(BOX_CONSULTAR_CRED_LASTNAME),

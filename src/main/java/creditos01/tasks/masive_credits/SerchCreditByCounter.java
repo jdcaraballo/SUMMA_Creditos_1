@@ -22,7 +22,7 @@ public class SerchCreditByCounter implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(BTN_VER_CREDITOS),
+                Click.on(BTN_VER_CREDITOS_MASIVOS),
                 WaitElement.isClickable(BOX_CONSULTAR_CRED_COUNTER),
                 Click.on(BOX_CONSULTAR_CRED_COUNTER),
                 Enter.theValue(counterCredit).into(BOX_CONSULTAR_CRED_COUNTER),

@@ -3,7 +3,7 @@ package creditos01.stepdefinitions.serch_detail_credit;
 
 import creditos01.interactions.HomePage;
 import creditos01.questions.serch_detail_credit.ValidateDetailCredit;
-import creditos01.tasks.Login;
+import creditos01.tasks.autentication.LoginDirAct;
 import creditos01.tasks.masive_credits.*;
 import creditos01.tasks.serch_detail_credit.SerchDetailCreditByLastName;
 import creditos01.tasks.serch_detail_credit.SerchDetailCreditByName;
@@ -21,7 +21,7 @@ public class SerchDetailCreditStep {
         OnStage.theActorInTheSpotlight().attemptsTo(
                 HomePage.inPage());
         OnStage.theActorInTheSpotlight().attemptsTo(
-                Login.login(user, key));
+                LoginDirAct.login(user, key));
     }
 
     @When("^el consulta detalles del credito por cédula (.*)$")

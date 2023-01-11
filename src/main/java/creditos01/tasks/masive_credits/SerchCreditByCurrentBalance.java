@@ -22,7 +22,7 @@ public class SerchCreditByCurrentBalance implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(BTN_VER_CREDITOS),
+                Click.on(BTN_VER_CREDITOS_MASIVOS),
                 WaitElement.isClickable(BOX_CONSULTAR_CURRENT_BALANCE),
                 Click.on(BOX_CONSULTAR_CURRENT_BALANCE),
                 Enter.theValue(currentBalance).into(BOX_CONSULTAR_CURRENT_BALANCE),

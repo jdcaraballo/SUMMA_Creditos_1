@@ -11,7 +11,7 @@ import net.serenitybdd.screenplay.actions.Hit;
 import static creditos01.userinterfaces.SerchDetailCreditUser.ICON_LUPA_WATCH_DETAIL;
 import static creditos01.userinterfaces.SerchDetailCreditUser.VALIDATION_VIEW_DETAIL_CREDIT;
 import static creditos01.userinterfaces.SerchMassiveCreditsUser.BOX_CONSULTAR_CRED_NAME;
-import static creditos01.userinterfaces.SerchMassiveCreditsUser.BTN_VER_CREDITOS;
+import static creditos01.userinterfaces.SerchMassiveCreditsUser.BTN_PRINCIAPAL_VER_CREDITOS;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static org.openqa.selenium.Keys.ENTER;
 
@@ -25,7 +25,7 @@ public class SerchDetailCreditByName implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(BTN_VER_CREDITOS),
+                Click.on(BTN_PRINCIAPAL_VER_CREDITOS),
                 WaitElement.isClickable(BOX_CONSULTAR_CRED_NAME),
                 Click.on(BOX_CONSULTAR_CRED_NAME),
                 Enter.theValue(name).into(BOX_CONSULTAR_CRED_NAME),
