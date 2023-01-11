@@ -39,6 +39,7 @@ public class UploadFileCorrect implements Task {
                WaitElement.isClickable(BTN_SEND),
                 Click.on(BTN_SEND),
                 Wait.aTime(5000)
+
         );
     }
     public static UploadFileCorrect upLoadFileT() {
